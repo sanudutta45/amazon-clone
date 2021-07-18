@@ -1,0 +1,29 @@
+.checkoutProduct {
+    @apply flex my-9;
+  }
+  
+  .info {
+    @apply ml-9;
+  }
+  
+  .info > button {
+    @apply bg-product_btn border-2 border-solid mt-5 px-3;
+  
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+  }
+  
+  .image {
+    @apply object-contain;
+    width: 180px;
+    height: 180px;
+  }
+  
+  .rating {
+    @apply flex;
+  }
+  
+  .title {
+    @apply text-sm font-extrabold;
+  }
+  

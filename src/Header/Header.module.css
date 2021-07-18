@@ -1,0 +1,42 @@
+.header {
+  @apply flex items-center bg-header sticky top-0 z-50 h-20;
+}
+
+.logo {
+  @apply w-24 object-contain mx-5 mt-4;
+}
+
+.search {
+  @apply flex flex-1 items-center border-none rounded-sm overflow-hidden;
+}
+
+.searchInput {
+  @apply p-5 border-none w-full h-10;
+}
+
+.searchIcon {
+  @apply h-10 bg-icon w-10 text-sm flex items-center justify-center cursor-pointer !important;
+}
+
+.nav {
+  @apply flex justify-evenly;
+}
+
+.option {
+  @apply flex flex-col mx-4 text-white;
+}
+
+.optionLineOne {
+  @apply text-xs;
+}
+.optionLineTwo {
+  @apply text-sm font-bold;
+}
+
+.optionBasket {
+  @apply flex items-center text-white mx-4;
+}
+
+.basketCount {
+  @apply mx-3;
+}

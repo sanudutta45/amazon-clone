@@ -1,0 +1,14 @@
+/* .home {
+  @apply flex justify-center mx-auto max-w-2xl;
+} */
+
+.banner {
+  @apply w-full -mb-64;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.row {
+  @apply flex mx-2;
+  z-index: 1;
+}

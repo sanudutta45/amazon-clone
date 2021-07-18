@@ -1,0 +1,13 @@
+.checkout {
+  @apply flex p-9 bg-white;
+  height: max-content;
+}
+
+.ad {
+  @apply w-full mb-5;
+}
+
+.title {
+  @apply mr-5 p-3 border-b border-solid text-3xl font-bold;
+  border-color: lightgray;
+}

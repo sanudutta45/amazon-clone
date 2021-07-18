@@ -1,0 +1,20 @@
+.subtotal {
+  @apply flex flex-col justify-between p-5 border-2 border-solid rounded-md;
+  background-color: #f3f3f3;
+  border-color: #dddddd;
+  width: 300px;
+}
+
+.gift {
+  @apply flex items-center mt-2;
+}
+
+.gift > input {
+  @apply mr-2;
+}
+
+.subtotal > button {
+  @apply bg-product_btn border rounded-sm w-full h-8 mt-4;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
