@@ -7,7 +7,7 @@ import { useContextValue } from "../Content/contextProvider";
 import Style from "./Product.module.css";
 
 const Product = ({ id, title, image, price, rating }) => {
-  const [{ basket }, dispatch] = useContextValue();
+  const [, dispatch] = useContextValue();
 
   const addToBasket = () => {
     //dispatch the item into the data layer

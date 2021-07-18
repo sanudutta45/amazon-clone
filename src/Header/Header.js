@@ -15,7 +15,7 @@ import {
 import Style from "./Header.module.css";
 
 const Header = () => {
-  const [{ basket, user }, dispatch] = useContextValue();
+  const [{ basket, user }] = useContextValue();
 
   const handleAuthentication = () => {
     if (user) {
