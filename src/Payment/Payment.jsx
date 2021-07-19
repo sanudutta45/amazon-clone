@@ -13,7 +13,7 @@ import Style from "./Payment.module.css";
 import { getBasketTotal } from "../Content/reducer";
 
 const Payment = () => {
-  const [{ basket, user }, dispatch] = useContextValue();
+  const [{ basket, user }] = useContextValue();
 
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
@@ -44,7 +44,7 @@ const Payment = () => {
     ev.preventDefault();
     setProcessing(true);
     try {
-      const { paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
+      await stripe.confirmCardPayment(clientSecret, {
         payment_method: {
           card: elements.getElement(CardElement),
         },
