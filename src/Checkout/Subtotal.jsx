@@ -1,5 +1,5 @@
 import React from "react";
-// import { useHistory } from "react-router";
+import { useHistory } from "react-router";
 import CurrencyFormat from "react-currency-format";
 
 //context
@@ -11,7 +11,7 @@ import { getBasketTotal } from "../Content/reducer";
 import Style from "./Subtotal.module.css";
 
 const Subtotal = () => {
-  //   const history = useHistory();
+  const history = useHistory();
   const [{ basket }] = useContextValue();
 
   return (
@@ -35,7 +35,9 @@ const Subtotal = () => {
         prefix={"$"}
       />
 
-      <button>Proceed to Checkout</button>
+      <button onClick={() => history.push("/payment")}>
+        Proceed to Checkout
+      </button>
     </div>
   );
 };

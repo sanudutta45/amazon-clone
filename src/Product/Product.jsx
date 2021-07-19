@@ -24,7 +24,7 @@ const Product = ({ id, title, image, price, rating }) => {
   };
 
   return (
-    <div className={Style.product}>
+    <div className={Style.product} key={id}>
       <div className={Style.info}>
         <p>{title}</p>
         <p className={Style.price}>
@@ -35,7 +35,7 @@ const Product = ({ id, title, image, price, rating }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <p key={i}>🌟</p>
             ))}
         </div>
       </div>

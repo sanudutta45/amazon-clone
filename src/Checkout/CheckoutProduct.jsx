@@ -14,7 +14,7 @@ const CheckoutProduct = ({ id, image, title, price, rating, hideButton }) => {
     });
   };
   return (
-    <div className={Style.checkoutProduct}>
+    <div className={Style.checkoutProduct} key={id}>
       <img className={Style.image} src={image} alt="" />
 
       <div className={Style.info}>
@@ -28,7 +28,7 @@ const CheckoutProduct = ({ id, image, title, price, rating, hideButton }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <p key={i}>🌟</p>
             ))}
         </div>
         {!hideButton && (

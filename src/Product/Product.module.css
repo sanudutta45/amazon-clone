@@ -1,5 +1,5 @@
 .product {
-  @apply flex flex-col items-center justify-end m-5 p-7 w-full  bg-white;
+  @apply flex flex-col items-center justify-end m-5 p-7 w-full  bg-white cursor-pointer filter hover:shadow-xl hover:scale-150 transition ease-in-out;
   z-index: 1;
   min-width: 100px;
   max-height: 450px;

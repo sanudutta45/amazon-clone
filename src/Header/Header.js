@@ -24,11 +24,13 @@ const Header = () => {
   };
   return (
     <div className={Style.header}>
-      <img
-        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        className={Style.logo}
-        alt=""
-      />
+      <Link to="/">
+        <img
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          className={Style.logo}
+          alt=""
+        />
+      </Link>
 
       <div className={Style.search}>
         <input type="text" className={Style.searchInput} />

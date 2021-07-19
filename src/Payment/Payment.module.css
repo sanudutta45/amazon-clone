@@ -1,0 +1,22 @@
+.payment {
+  @apply bg-white;
+}
+
+.container > h1 {
+  @apply text-center text-xl p-4 font-normal border-b border-solid;
+  background-color: rgb(234, 237, 237);
+}
+
+.section {
+  @apply flex p-9 my-0 mx-9 border-b border-solid;
+  border-color: lightgray;
+}
+
+.title{
+    @apply font-bold;
+    flex: 0.2;
+}
+
+.address, .items, .details{
+    flex: 0.8;
+}
